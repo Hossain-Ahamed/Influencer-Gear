@@ -42,14 +42,14 @@ body {
 }
 
 
-.header-nav-items a {
+.header-nav-item {
     font-size: 1em;
     color: var(--text-colors-black);
     margin-right: 34px;
     text-decoration: none;
 }
 
-.header-nav-items a:hover {
+.header-nav-item:hover {
     font-weight: bold;
 }
 
