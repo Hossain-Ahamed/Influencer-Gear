@@ -11,17 +11,8 @@
 }
 
 body {
- 
-    width: 1440px;
     margin: 0 120px;
-   
 }
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 
 .fa-solid {
     color: #000000;
@@ -144,7 +135,7 @@ section{
 */
 
 .popular-collection{
-    width: 1097px;
+   
    margin: 0 76px;
     flex-direction: column;
     justify-content: center;
@@ -159,6 +150,7 @@ section{
     grid-template-columns: repeat(3,1fr);
     column-gap: 30px;
     row-gap: 30px;
+    overflow: hidden;
 }
 .collection-item{ 
     /* border: 1px solid black; */
@@ -201,7 +193,6 @@ section{
 @media only screen and (max-width:688px) {
     body {
         margin: 0;
-        width: 100ww;
     }
 
     .navbar {
