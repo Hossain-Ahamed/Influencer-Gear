@@ -7,17 +7,31 @@
 
 :root {
     --text-colors-black: #3A3A3A;
+    --root-color:#E02C6DDE;
 }
 
 body {
+ 
+    width: 1440px;
     margin: 0 120px;
+   
 }
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .fa-solid {
     color: #000000;
 }
 section{
     margin-top: 100px;
+}
+
+[class*="button"]{
+    text-decoration: none;
 }
 
 /*
@@ -91,15 +105,14 @@ section{
     color: var(--text-colors-black);
 }
 
-.button {
-    text-decoration: none;
-    background-color: #E02C6D;
+#prebook {
+    background-color: var(--root-color);
     color: white;
     padding: 10px 24px;
     border-radius: 41px;
 }
 
-.button>.fa-solid {
+#prebook>.fa-solid {
     color: white;
 }
 
@@ -125,6 +138,65 @@ section{
     margin: 0 20px;
 }
 
+
+/*
+------Popular - collection -------------
+*/
+
+.popular-collection{
+    width: 1097px;
+   margin: 0 76px;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.poular-collection-title{
+     text-align: center;
+}
+.collections-container{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+}
+.collection-item{ 
+    /* border: 1px solid black; */
+    /* height: 476px; */
+    border-radius: 5px;
+    padding: 14px; 
+    box-shadow: 0px 5px 30px 10px rgb(170, 170, 170,0.2);
+}
+
+.collection-item img{
+   width: 100%;
+  
+   
+}
+.collection-item-details{
+   
+}
+.collection-item-details p{
+ margin: 0;
+}
+
+#item-name{
+    margin: 0;
+}
+#item-description{
+    
+}
+
+.see-more{
+   
+    display: flex;
+   justify-content: flex-end;
+ 
+}
+
+ #see-more-button, #see-more-button>i {
+     color: var(--root-color);
+ }
 
 @media only screen and (max-width:688px) {
     body {
