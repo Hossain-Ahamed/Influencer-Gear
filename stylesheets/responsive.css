@@ -1,0 +1,135 @@
+/*--------------       TAB   ------------------- */
+@media only screen and (max-width:1024px) {
+
+    /*
+    ---utilities
+    */
+    main {
+        margin: 0 20px;
+    }
+
+    section {
+        margin-top: 50px;
+    }
+
+    /*
+    --popular collection
+    */
+    .popular-collection {
+        margin: 0;
+    }
+
+    .collections-container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+
+
+    /*
+---- Featured product ----
+*/
+    .featured-product {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .featured-product-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    #featured-image {
+        width: 90%;
+    }
+
+
+
+    #featured-product-title {
+        color: #0A0826;
+    }
+    .featured-product-detail {
+        margin-left: 20px;
+       
+    }
+    #featured-product-article {
+        color: #6C6C6C;
+    }
+
+}
+
+
+/* ---------------   Mobile  ------------------ */
+@media only screen and (max-width:688px) {
+    main {
+        margin: 0 13px;
+    }
+
+    .navbar {
+        margin: 30px 3vw 0 3vw;
+
+    }
+
+    .navbar .fa-solid {
+        font-size: 2em;
+    }
+
+    .header-nav-item {
+        display: none;
+    }
+
+    #dropdown {
+        display: inline-block;
+    }
+
+
+    .flexible-container {
+        flex-direction: column;
+
+    }
+
+    .flex-half {
+        width: 90%;
+    }
+
+    /*
+      ----front page
+  */
+    .intro-page {
+        text-align: center;
+    }
+
+    .intro-blog {
+        order: 2;
+    }
+
+    .intro-banner {
+        order: 1;
+    }
+
+    .intro-banner img {
+        width: 85%;
+    }
+
+    /*
+    --popular collection
+    */
+    .popular-collection {
+        margin: 0;
+    }
+
+    .collections-container {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0;
+        row-gap: 30px;
+    }
+
+    /*-featured product*/
+    .featured-product-detail {
+        margin-left: 0;
+        text-align: center;
+    }
+
+
+
+}
