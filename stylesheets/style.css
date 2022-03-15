@@ -201,6 +201,7 @@ section{
 @media only screen and (max-width:688px) {
     body {
         margin: 0;
+        width: 100ww;
     }
 
     .navbar {
